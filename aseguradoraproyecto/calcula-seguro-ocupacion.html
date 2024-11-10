@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula tu Seguro de Ocupación Ilegal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Calcula tu Seguro de Ocupación Ilegal</h1>
+    </header>
+
+    <section class="form-section">
+        <h2>Introduce los datos de la propiedad</h2>
+        <form id="formSeguroOcupacion" onsubmit="calcularSeguro(event, 'ocupacion')">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="valor">Valor de la propiedad (en €):</label>
+            <input type="number" id="valor" name="valor" required>
+
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="resultado"></div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Asegurathor. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

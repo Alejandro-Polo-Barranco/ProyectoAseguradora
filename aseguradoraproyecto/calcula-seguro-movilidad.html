@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula tu Seguro de Movilidad Personal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Calcula tu Seguro de Movilidad Personal</h1>
+    </header>
+
+    <section class="form-section">
+        <h2>Introduce los datos de movilidad</h2>
+        <form id="formSeguroMovilidad" onsubmit="calcularSeguro(event, 'movilidad')">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="tipoVehiculo">Tipo de Vehículo:</label>
+            <select id="tipoVehiculo" name="tipoVehiculo">
+                <option value="patinete">Patinete</option>
+                <option value="bicicleta">Bicicleta</option>
+                <option value="scooter">Scooter</option>
+            </select>
+
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="resultado"></div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Asegurathor. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
