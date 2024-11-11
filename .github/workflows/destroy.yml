@@ -29,14 +29,14 @@ jobs:
         with:
           terraform_wrapper: false
 
-      # 4. Inicializar Terraform
+      # Inicializar Terraform
       - name: Initialize Terraform
         run: terraform init
 
-      # 5. Planificar la destrucción
+      # Planifica la destrucción sacando el tfstate
       - name: Terraform Plan Destroy
         run: terraform plan -destroy -out=tfplan
 
-      # 6. Ejecutar el plan de destrucción
+      # Ejecutar el plan de destrucción
       - name: Terraform Apply Destroy
         run: terraform apply -auto-approve tfplan
