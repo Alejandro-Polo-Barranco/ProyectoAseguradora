@@ -40,12 +40,20 @@ resource "aws_security_group" "web" {
   }
 }
 
+# Se le da la clave publica a aws
+resource "aws_key_pair" "clavepublica" {
+  key_name   = "aseguradora_aws_key"
+  public_key = file("./id_rsa.pub")
+}
+
 #Nueva instancia EC2
 resource "aws_instance" "aseguradora" {
     ami = "ami-06b21ccaeff8cd686" #Ami de Amazon Linux 2023
     instance_type = "t2.micro"
     vpc_security_group_ids = [aws_security_group.web.id]
     subnet_id = aws_subnet.public[0].id
+    key_name = aws_key_pair.clavepublica.key_name #se referencia a la clave publica nunca la privada
+    user_data = file("script.sh") #Donde almaceno el script que se ejecutara en la instancia
   tags = {
     Name = "LinuxAseguradora"
   }

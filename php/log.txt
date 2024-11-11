@@ -1,0 +1,54 @@
+2024-11-03 14:04:33 - Registro de nuevo usuario: pepe
+2024-11-03 14:05:06 - El usuario pepe publicó un mensaje en su muro.
+2024-11-03 15:16:12 - El usuario pepe creó una nueva publicación.
+2024-11-03 15:16:23 - El usuario pepe comentó en la publicación: usuarios/pepe/672785ac6a787.txt.
+2024-11-03 15:16:59 - El usuario maria comentó en la publicación: usuarios/pepe/672785ac6a787.txt.
+2024-11-03 15:20:02 - El usuario maria comentó en la publicación: usuarios/pepe/672785ac6a787.txt.
+2024-11-03 15:20:36 - El usuario maria creó una nueva publicación.
+2024-11-03 15:20:43 - El usuario maria comentó en la publicación: usuarios/maria/672786b4a9e8e.txt.
+2024-11-03 15:20:52 - El usuario maria comentó en la publicación: usuarios/maria/672786b4a9e8e.txt_comentarios.txt.
+2024-11-03 15:21:03 - El usuario maria comentó en la publicación: usuarios/maria/672786b4a9e8e.txt.
+2024-11-03 15:21:38 - El usuario pepe comentó en la publicación: usuarios/pepe/672785ac6a787.txt_comentarios.txt.
+2024-11-03 15:21:43 - El usuario pepe comentó en la publicación: usuarios/pepe/672785ac6a787.txt.
+2024-11-05 16:21:48 - El usuario maria creó una nueva publicación.
+2024-11-05 16:21:59 - El usuario maria comentó en la publicación: usuarios/maria/672a380c73c4a.txt.
+2024-11-05 17:21:45 - El usuario maria eliminó una publicación.
+2024-11-05 17:21:48 - El usuario maria eliminó una publicación.
+2024-11-05 17:21:49 - El usuario maria eliminó una publicación.
+2024-11-05 17:21:51 - El usuario maria eliminó una publicación.
+2024-11-05 17:21:53 - El usuario maria eliminó una publicación.
+2024-11-05 17:30:32 - El usuario mariobros creó una nueva publicación.
+2024-11-05 17:30:43 - El usuario mariobros comentó en la publicación: usuarios/mariobros/672a48287a1ef.txt.
+2024-11-05 17:37:19 - El usuario mariobros envió un mensaje a pepe.
+2024-11-05 17:37:29 - El usuario mariobros envió un mensaje a pepe.
+2024-11-05 18:58:08 - El usuario maria envió un mensaje a mariobros.
+2024-11-05 18:58:22 - El usuario mariobros envió un mensaje a maria.
+2024-11-05 18:59:13 - El usuario mariobros comentó en la publicación: usuarios/mariobros/mensajes_recibidos.txt.
+2024-11-05 19:00:12 - El usuario maria dio 'Me gusta' a la publicación: usuarios/mariobros/672a48287a1ef.txt.
+2024-11-05 19:02:51 - El usuario maria eliminó una publicación.
+2024-11-05 19:03:00 - El usuario maria envió un mensaje a mariobros.
+2024-11-05 19:05:16 - El usuario mariobros eliminó una publicación.
+2024-11-05 20:12:02 - El usuario maria dio 'Me gusta' a la publicación: usuarios/mariobros/672a48287a1ef.txt.
+2024-11-05 20:12:04 - El usuario maria dio 'Me gusta' a la publicación: usuarios/mariobros/672a48287a1ef.txt_comentarios.txt.
+2024-11-05 20:12:07 - El usuario maria dio 'Me gusta' a la publicación: usuarios/mariobros/672a48287a1ef.txt_likes.txt.
+2024-11-05 20:13:46 - El usuario pepe creó una nueva publicación.
+2024-11-05 20:13:52 - El usuario pepe eliminó una publicación.
+2024-11-05 20:13:53 - El usuario pepe eliminó una publicación.
+2024-11-05 20:13:54 - El usuario pepe eliminó una publicación.
+2024-11-05 20:13:55 - El usuario pepe eliminó una publicación.
+2024-11-05 20:13:55 - El usuario pepe eliminó una publicación.
+2024-11-05 20:14:01 - El usuario pepe creó una nueva publicación.
+2024-11-05 20:14:08 - El usuario pepe comentó en la publicación: usuarios/pepe/672a6e7985a12.txt.
+2024-11-05 20:14:11 - El usuario pepe dio 'Me gusta' a la publicación: basename(usuarios/pepe/672a6e7985a12.txt).
+2024-11-05 20:14:17 - El usuario pepe dio 'Me gusta' a la publicación: basename(usuarios/pepe/672a6e7985a12.txt)_likes.txt).
+2024-11-05 20:22:25 - El usuario maria envió un mensaje a pepe.
+2024-11-05 20:22:50 - El usuario pepe envió un mensaje a maria.
+2024-11-05 20:23:43 - El usuario maria eliminó una publicación.
+2024-11-05 20:23:44 - El usuario maria eliminó una publicación.
+2024-11-05 20:23:44 - El usuario maria eliminó una publicación.
+2024-11-05 20:23:45 - El usuario maria eliminó una publicación.
+2024-11-05 20:23:45 - El usuario maria eliminó una publicación.
+2024-11-05 20:29:39 - El usuario maria envió un mensaje a pepe.
+2024-11-05 20:44:41 - El usuario maria creó una nueva publicación.
+2024-11-05 20:57:58 - El usuario maria creó una nueva publicación.
+2024-11-05 21:01:38 - El usuario pepe comentó en la publicación: usuarios/pepe/672a6e7985a12.txt.
