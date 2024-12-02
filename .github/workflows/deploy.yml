@@ -1,3 +1,4 @@
+
 name: Terraform AWS Deployment
 
 on:
@@ -11,7 +12,24 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        
+        # Instalar PHP y PHPUnit en el runner de GitHub Actions
+      - name: Install PHP and PHPUnit
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y php-cli php-xml wget unzip
+          wget https://phar.phpunit.de/phpunit-9.phar
+          chmod +x phpunit-9.phar
+          sudo mv phpunit-9.phar /usr/local/bin/phpunit
 
+      # Ejecutar pruebas unitarias antes del despliegue
+      - name: Run PHPUnit Tests
+        run: |
+          cd php_app  # Cambia al directorio de tu aplicación PHP
+          composer install  # Instalar dependencias si usas Composer
+          phpunit --configuration phpunit.xml  # Ejecutar las pruebas
+
+      # Si las se pasa el phpunit, continúa con Terraform
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
         with:

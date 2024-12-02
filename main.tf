@@ -127,4 +127,36 @@ resource "aws_nat_gateway" "default" {
   allocation_id = aws_eip.nat[count.index].id
   subnet_id     = aws_subnet.public[count.index].id
 }
+
+terraform {
+  backend "s3" {
+    bucket = "proyectoaseguradora-tfstate-bucket" 
+    key    = "terraform.tfstate"                   # Ruta del archivo tfstate en el bucket
+    region = var.region_virginia                          
+  }
+}
+
+
+# S3 para el tfstate
+resource "aws_s3_bucket" "terraform_state" {
+  bucket = "proyectoaseguradora-tfstate-bucket" 
+
+  # Habilita el versionado para mantener historial del tfstate
+  versioning {
+    enabled = true 
+  }
+
+# Evita la destrucción accidental del bucket
+  lifecycle {
+    prevent_destroy = true  
+  }
+}
+resource "aws_s3_bucket_public_access_block" "public_access_block" {
+  bucket = aws_s3_bucket.terraform_state.id
+
+  block_public_acls       = true
+  block_public_policy     = true
+  ignore_public_acls      = true
+  restrict_public_buckets = true
+}
  

@@ -6,6 +6,8 @@
 // Primero verifica si el nombre de usuario ya existe en el archivo.
 // Si no existe, lo agrega al archivo de usuarios.
 // Retorna true si el registro es exitoso y false si ya existe el usuario.
+/* The `registrarUsuario` function in the provided PHP code is responsible for registering a new user
+in the system. Here's a breakdown of what the function does: */
 function registrarUsuario($nombre, $password) {
     $usuarios = file("usuarios/usuarios.ini", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES); // Se carga el archivo de usuarios en un array.
 

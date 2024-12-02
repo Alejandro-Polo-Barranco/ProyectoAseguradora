@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: scripts.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: scripts.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * The function `calculateCarInsurance` calculates the estimated price of a car insurance policy based
+ * on the age of the car and the selected coverage type.
+ * @param event - The `event` parameter in the `calculateCarInsurance` function is an event object that
+ * represents an event being handled, such as a form submission. In this case, the function is designed
+ * to calculate the estimated price of car insurance based on the age of the car and the type of
+ * coverage selected by
+ */
+function calculateCarInsurance(event) {
+    event.preventDefault();
+    const edad = parseInt(document.getElementById("edadCoche").value);
+    const cobertura = document.getElementById("coberturaCoche").value;
+
+    let basePrice = 500;
+    if (edad &lt; 25) {
+        basePrice += 150;
+    } else if (edad > 60) {
+        basePrice += 100;
+    }
+
+    switch (cobertura) {
+        case "completa":
+            basePrice *= 1.5;
+            break;
+        case "premium":
+            basePrice *= 2;
+            break;
+    }
+
+    document.getElementById("resultadoCoche").innerText = `El precio estimado de tu seguro de coche es: €${basePrice.toFixed(2)}`;
+}
+
+/**
+ * The function `calculateMotoInsurance` calculates the estimated price of motorcycle insurance based
+ * on age and coverage type selected.
+ * @param event - The `event` parameter in the `calculateMotoInsurance` function is an event object
+ * that is passed to the function when it is called. In this case, it is used to prevent the default
+ * behavior of a form submission using `event.preventDefault()`. This is commonly done in JavaScript to
+ * prevent the
+ */
+function calculateMotoInsurance(event) {
+    event.preventDefault();
+    const edad = parseInt(document.getElementById("edadMoto").value);
+    const cobertura = document.getElementById("coberturaMoto").value;
+
+    let basePrice = 300;
+    if (edad &lt; 25) {
+        basePrice += 100;
+    } else if (edad > 60) {
+        basePrice += 80;
+    }
+
+    switch (cobertura) {
+        case "completa":
+            basePrice *= 1.4;
+            break;
+        case "premium":
+            basePrice *= 1.8;
+            break;
+    }
+
+    document.getElementById("resultadoMoto").innerText = `El precio estimado de tu seguro de moto es: €${basePrice.toFixed(2)}`;
+}
+
+/**
+ * The function calculates the estimated price of home insurance based on the property value and
+ * selected coverage type.
+ * @param event - The `event` parameter in the `calculateHomeInsurance` function is an event object
+ * that is passed to the function when it is called. In this case, it is used to prevent the default
+ * behavior of a form submission using `event.preventDefault()`. This is commonly done in JavaScript
+ * event handling to prevent
+ */
+function calculateHomeInsurance(event) {
+    event.preventDefault();
+    const valorVivienda = parseInt(document.getElementById("valorVivienda").value);
+    const cobertura = document.getElementById("tipoCoberturaHogar").value;
+
+    let basePrice = valorVivienda * 0.002;
+    switch (cobertura) {
+        case "completa":
+            basePrice *= 1.3;
+            break;
+        case "premium":
+            basePrice *= 1.6;
+            break;
+    }
+
+    document.getElementById("resultadoHogar").innerText = `El precio estimado de tu seguro de hogar es: €${basePrice.toFixed(2)}`;
+}
+
+/* The `calculateHealthInsurance` function is calculating the estimated price of a health insurance
+policy based on the age of the insured person and the selected coverage type. */
+function calculateHealthInsurance(event) {
+    event.preventDefault();
+    const edad = parseInt(document.getElementById("edadSalud").value);
+    const cobertura = document.getElementById("coberturaSalud").value;
+
+    let basePrice = 200;
+    if (edad > 50) {
+        basePrice += 100;
+    }
+
+    switch (cobertura) {
+        case "completa":
+            basePrice *= 1.5;
+            break;
+        case "premium":
+            basePrice *= 2;
+            break;
+    }
+
+    document.getElementById("resultadoSalud").innerText = `El precio estimado de tu seguro de salud es: €${basePrice.toFixed(2)}`;
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#calculateCarInsurance">calculateCarInsurance</a></li><li><a href="global.html#calculateHomeInsurance">calculateHomeInsurance</a></li><li><a href="global.html#calculateMotoInsurance">calculateMotoInsurance</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Mon Dec 02 2024 22:59:09 GMT+0100 (hora estándar de Europa central)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
