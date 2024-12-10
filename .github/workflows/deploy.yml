@@ -22,11 +22,25 @@ jobs:
           chmod +x phpunit-9.phar
           sudo mv phpunit-9.phar /usr/local/bin/phpunit
 
+      # Verificar si la carpeta `php_app` existe
+      - name: Verify php_app directory
+        run: |
+          if [ -d "php_app" ]; then
+            echo "php_app directory exists"
+          else
+            echo "php_app directory does not exist"
+            exit 1
+          fi
+
+      # Listar los archivos dentro de `php_app` para verificar estructura
+      - name: List php_app contents
+        run: |
+          ls -R php_app
+
       # Ejecutar pruebas unitarias antes del despliegue
       - name: Run PHPUnit Tests
         run: |
-          cd php_app  # Cambia al directorio de tu aplicación PHP
-          composer install  # Instalar dependencias si usas Composer
+          cd php_app  
           phpunit --configuration phpunit.xml  # Ejecutar las pruebas
 
       # Si las se pasa el phpunit, continúa con Terraform
